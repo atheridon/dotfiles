@@ -1,0 +1,205 @@
+# Set the mod key, super=Mod4 or alt=Mod1
+set $mod Mod4
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Gaps & borders
+for_window [class="^.*"] border pixel 0
+gaps outer 8
+gaps inner 8
+
+# Turn gaps on or off
+bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0
+bindsym $mod+g gaps inner all set 8; gaps outer all set 8
+
+# Hide borders when only one window on current workspace
+#hide_edge_borders smart
+
+# Hide gaps if only one window on current workspace
+#smart_gaps on
+
+# Colors
+#set $color #ff6a00
+set $color #ffff00
+#set $color #50ff00
+set $rcolo  #FF0000
+set $bg     #262626
+set $bg_in  #404040
+
+# Class                 border    backgr.   text      indicator   child_border
+client.focused          $bg_in    $bg_in    $bg_in    $color      $color
+client.focused_inactive $bg_in    $bg_in    $bg_in    $bg_in      $bg_in
+client.unfocused        $bg_in    $bg_in    $bg_in    $bg_in      $bg_in
+client.urgent           $bg_in    $bg_in    $bg_in    $bg_in      $bg_in
+client.placeholder      $bg_in    $bg_in    $bg_in    $bg_in      $bg_in
+client.background #ffffff
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# Resize windows the better way
+bindsym $mod+Control+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+Down resize grow height 10 px or 10 ppt
+bindsym $mod+Control+Up resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+Right resize grow width 10 px or 10 ppt
+
+# Same with vim keys h,j,k,l
+bindsym $mod+Control+j resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+k resize grow height 10 px or 10 ppt
+bindsym $mod+Control+l resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+odiaeresis resize grow width 10 px or 10 ppt
+
+# Font for window titles
+font pango:monospace 11
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+odiaeresis focus right
+
+# Alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+odiaeresis move right
+
+# Alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split in horizontal orientation
+bindsym $mod+h split h
+
+# Split in vertical orientation
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus parent
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# Focus the child container
+bindsym $mod+c focus child
+
+######## Startup applications ########
+# Battery script
+exec_always --no-startup-id ~/nextcloud/Linux/scripts/lowbattery-check.sh &
+
+# Polybar as status bar
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
+
+# Compton as compositor
+exec_always --no-startup-id compton --respect-prop-shadow --config ~/.config/compton/compton.conf &
+
+# Dunst for notifications
+exec_always --no-startup-id dunst &
+
+# Feh for wallpaper
+exec_always --no-startup-id feh --bg-fill ~/nextcloud/Pictures/Wallpaper/color_shatter.jpg &
+
+######## Shortcuts for applications ########
+# Control audio
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
+bindsym Shift+XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+bindsym Shift+XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+
+# Control backlight
+bindsym XF86MonBrightnessUp exec xbacklight -inc 3
+bindsym XF86MonBrightnessDown exec xbacklight -dec 3
+
+# Lock screen 
+#bindsym Mod1+l exec --no-startup-id i3lock-next "3N73R P455W0RD 70 UN10CK" IBMPlexMono 14 &
+bindsym --release Mod1+l exec --no-startup-id slock &
+
+# Start a terminal
+bindsym $mod+Return exec --no-startup-id st &
+
+# Start a web browser
+bindsym $mod+Shift+f exec --no-startup-id firefox &
+
+# Start an email client
+bindsym $mod+Shift+m exec --no-startup-id thunderbird &
+
+# Start filemanager
+bindsym Mod1+Return exec st -e ranger &
+
+# Start rofi
+bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun -show combi &
+
+# Start power menu
+bindsym $mod+Shift+e exec --no-startup-id ~/nextcloud/Linux/scripts/pmenu.sh &
+
+# Start nextcloud
+exec_always --no-startup-id "killall nextcloud; sh -c 'sleep 5; exec nextcloud &'"
+
+# Take a screenshot - fullscreen
+bindsym Print exec scrot -q 100 ~/nextcloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t ~/nextcloud/Pictures/Screenshots/ &
+
+# Take a screenshot - selection
+bindsym --release Shift+Print exec scrot -q 100 -s ~/nextcloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t 9999 ~/nextcloud/Pictures/Screenshots/ &
