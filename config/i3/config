@@ -160,7 +160,7 @@ exec_always --no-startup-id compton --respect-prop-shadow --config ~/.config/com
 exec_always --no-startup-id dunst &
 
 # Feh for wallpaper
-exec_always --no-startup-id feh --bg-fill ~/nextcloud/Pictures/Wallpaper/color_shatter.jpg &
+exec_always --no-startup-id feh --bg-fill ~/nextcloud/Pictures/Wallpaper/shroom_2.jpg &
 
 ######## Shortcuts for applications ########
 # Control audio
