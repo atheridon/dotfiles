@@ -148,7 +148,7 @@ bindsym $mod+c focus child
 
 ######## Startup applications ########
 # Battery script
-exec_always --no-startup-id ~/nextcloud/Linux/scripts/lowbattery-check.sh &
+exec_always --no-startup-id ~/owncloud/Linux/scripts/lowbattery-check.sh &
 
 # Polybar as status bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -160,7 +160,7 @@ exec_always --no-startup-id compton --respect-prop-shadow --config ~/.config/com
 exec_always --no-startup-id dunst &
 
 # Feh for wallpaper
-exec_always --no-startup-id feh --bg-fill ~/nextcloud/Pictures/Wallpaper/shroom_2.jpg &
+exec_always --no-startup-id feh --bg-fill ~/owncloud/Pictures/Wallpaper/shroom_2.jpg &
 
 ######## Shortcuts for applications ########
 # Control audio
@@ -193,13 +193,13 @@ bindsym Mod1+Return exec st -e ranger &
 bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun -show combi &
 
 # Start power menu
-bindsym $mod+Shift+e exec --no-startup-id ~/nextcloud/Linux/scripts/pmenu.sh &
+bindsym $mod+Shift+e exec --no-startup-id ~/owncloud/Linux/scripts/pmenu.sh &
 
-# Start nextcloud
-exec_always --no-startup-id "killall nextcloud; sh -c 'sleep 5; exec nextcloud &'"
+# Start owncloud
+exec_always --no-startup-id "killall owncloud; sh -c 'sleep 5; exec owncloud &'"
 
 # Take a screenshot - fullscreen
-bindsym Print exec scrot -q 100 ~/nextcloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t ~/nextcloud/Pictures/Screenshots/ &
+bindsym Print exec scrot -q 100 ~/owncloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t ~/owncloud/Pictures/Screenshots/ &
 
 # Take a screenshot - selection
-bindsym --release Shift+Print exec scrot -q 100 -s ~/nextcloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t 9999 ~/nextcloud/Pictures/Screenshots/ &
+bindsym --release Shift+Print exec scrot -q 100 -s ~/owncloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t 9999 ~/owncloud/Pictures/Screenshots/ &
