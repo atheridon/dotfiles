@@ -9,8 +9,8 @@ bindsym $mod+Shift+r restart
 
 # Gaps & borders
 for_window [class="^.*"] border pixel 0
-gaps outer 8
-gaps inner 8
+gaps outer 0
+gaps inner 0
 
 # Turn gaps on or off
 bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0
