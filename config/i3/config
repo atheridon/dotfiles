@@ -9,8 +9,8 @@ bindsym $mod+Shift+r restart
 
 # Gaps & borders
 for_window [class="^.*"] border pixel 0
-gaps outer 0
-gaps inner 0
+gaps outer 8
+gaps inner 8
 
 # Turn gaps on or off
 bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0
@@ -174,8 +174,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 3
 bindsym XF86MonBrightnessDown exec xbacklight -dec 3
 
 # Lock screen 
-#bindsym Mod1+l exec --no-startup-id i3lock-next "3N73R P455W0RD 70 UN10CK" IBMPlexMono 14 &
-bindsym --release Mod1+l exec --no-startup-id slock &
+bindsym Mod1+l exec --no-startup-id i3lock-next "3N73R P455W0RD 70 UN10CK" IBMPlexMono 14 &
+#bindsym --release Mod1+l exec --no-startup-id slock &
 
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id st &
