@@ -153,8 +153,8 @@ exec_always --no-startup-id ~/owncloud/Linux/scripts/lowbattery-check.sh &
 # Polybar as status bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
-# Compton as compositor
-exec_always --no-startup-id compton --respect-prop-shadow --config ~/.config/compton/compton.conf &
+# Picom as compositor
+exec_always --no-startup-id picom --respect-prop-shadow --config ~/.config/picom/picom.conf &
 
 # Dunst for notifications
 exec_always --no-startup-id dunst &
