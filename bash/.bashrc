@@ -11,4 +11,5 @@ export EDITOR=/usr/bin/vim
 export SUDO_EDITOR=/usr/bin/vim
 export TERM=xterm
 
+# Personal aliases
 alias pacman='sudo pacman'
