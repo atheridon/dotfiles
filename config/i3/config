@@ -154,7 +154,7 @@ exec_always --no-startup-id ~/owncloud/Linux/scripts/lowbattery-check.sh &
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Picom as compositor
-exec_always --no-startup-id picom --respect-prop-shadow --config ~/.config/picom/picom.conf &
+#exec_always --no-startup-id picom --respect-prop-shadow --config ~/.config/picom/picom.conf &
 
 # Dunst for notifications
 exec_always --no-startup-id dunst &
