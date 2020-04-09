@@ -8,7 +8,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Gaps & borders
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 gaps outer 8
 gaps inner 8
 
@@ -154,7 +154,7 @@ exec_always --no-startup-id ~/owncloud/Linux/scripts/lowbattery-check.sh &
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Picom as compositor
-#exec_always --no-startup-id picom --respect-prop-shadow --config ~/.config/picom/picom.conf &
+exec_always --no-startup-id picom --respect-prop-shadow --config ~/.config/picom/picom.conf &
 
 # Dunst for notifications
 exec_always --no-startup-id dunst &
