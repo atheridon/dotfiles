@@ -30,19 +30,19 @@
 [urgency_low]
     background = "#181818"
     foreground = "#ffffff"
-    frame_color = "#00ffed"
+    frame_color = "#ffff00"
     timeout = 5
 
 [urgency_normal]
     background = "#181818"
     foreground = "#ffffff"
-    frame_color = "#00ffed"
+    frame_color = "#ffff00"
     timeout = 10
 
 [urgency_critical]
     background = "#181818"
     foreground = "#ffffff"
-    frame_color = "#00ffed"
+    frame_color = "#ffff00"
     timeout = 10
 
 [shortcuts]
