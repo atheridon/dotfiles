@@ -20,6 +20,6 @@ esac
 # custom aliases
 alias ls="ls --color=auto"
 alias l="ls -l --color=auto"
-alias ll="ls -al --color=auto"
+alias ll="ls -a --color=auto"
 alias dir="ls --color=auto"
 alias clip="xclip -sel c <"
