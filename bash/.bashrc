@@ -1,15 +1,12 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
+# if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1="\u@\h \[\e[34m\]\w\[\e[m\] \\$ "
-
-export EDITOR=/usr/bin/vim
-export SUDO_EDITOR=/usr/bin/vim
+# set terminal 
 export TERM=xterm
 
-# Personal aliases
+# set sudo editor
+export EDITOR=/usr/bin/vim
+export SUDO_EDITOR=/usr/bin/vim
+
+# personal aliases
 alias pacman='sudo pacman'
