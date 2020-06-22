@@ -20,10 +20,10 @@ bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0
 bindsym $mod+g gaps inner all set 8; gaps outer all set 8
 
 # Hide borders when only one window on current workspace
-#hide_edge_borders smart
+hide_edge_borders smart
 
 # Hide gaps if only one window on current workspace
-#smart_gaps on
+smart_gaps on
 
 # Colors
 #set $color #ff6a00
