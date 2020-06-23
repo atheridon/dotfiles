@@ -8,7 +8,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Gaps & borders
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 gaps outer 8
 gaps inner 8
 
@@ -202,7 +202,7 @@ bindsym $mod+Shift+e exec --no-startup-id ~/owncloud/Linux/scripts/pmenu.sh &
 exec_always --no-startup-id "killall owncloud; sh -c 'sleep 5; exec owncloud &'"
 
 # Take a screenshot - fullscreen
-bindsym Print exec scrot -q 100 ~/owncloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t ~/owncloud/Pictures/Screenshots/ &
+bindsym Print exec scrot -q 100 ~/tmp/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t ~/tmp/ &
 
 # Take a screenshot - selection
-bindsym --release Shift+Print exec scrot -q 100 -s ~/owncloud/Pictures/Screenshots/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t 9999 ~/owncloud/Pictures/Screenshots/ &
+bindsym --release Shift+Print exec scrot -q 100 -s ~/tmp/%b%d::%H%M%S.png && notify-send "Screenshot taken!" && sxiv -t 9999 ~/tmp/ &

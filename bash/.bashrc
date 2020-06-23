@@ -10,3 +10,5 @@ export SUDO_EDITOR=/usr/bin/vim
 
 # personal aliases
 alias pacman='sudo pacman'
+alias todow='vi ~/.todo.txt'
+alias todor='cat ~/.todo.txt;'
