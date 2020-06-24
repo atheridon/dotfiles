@@ -19,7 +19,8 @@ esac
 
 # custom aliases
 alias ls="ls --color=auto"
-alias l="ls -l --color=auto"
-alias ll="ls -a --color=auto"
+alias l="ls -a --color=auto"
+alias ll="ls -al --color=auto"
 alias dir="ls --color=auto"
 alias clip="xclip -sel c <"
+alias scan="scanimage --format=png --output-file test.png --progress --device epson2:net:10.0.0.251 --mode color --resolution 100"
