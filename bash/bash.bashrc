@@ -18,7 +18,7 @@ esac
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 # custom aliases
-alias ls="ls --color=auto"
+alias ls="ls --color=auto --group-directories-first"
 alias l="ls -a --color=auto"
 alias ll="ls -al --color=auto"
 alias dir="ls --color=auto"
