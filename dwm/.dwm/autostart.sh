@@ -1,8 +1,8 @@
 #!/bin/sh
 
+~/owncloud/Linux/scripts/battcheck start &
 nitrogen --restore &
-dunst &
 picom &
+dunst &
 dwmblocks &
 killall owncloud; sleep 5; owncloud &
-~/owncloud/Linux/scripts/lowbattery-check &
