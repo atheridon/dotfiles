@@ -3,6 +3,6 @@
 ~/owncloud/Linux/scripts/battcheck start &
 dwmblocks &
 nitrogen --restore &
-picom &
 dunst &
+picom &
 killall owncloud; sleep 5; owncloud &
