@@ -8,3 +8,4 @@
 - ranger
 - rofi
 - sxiv
+- dwm/autostart.sh
