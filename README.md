@@ -1,11 +1,10 @@
 # Linux dotfiles
 
-- vimrc
 - bashrc
-- i3
-- polybar
+- bash.bashrc
 - dunst
+- dwm/autostart.sh
 - ranger
 - rofi
 - sxiv
-- dwm/autostart.sh
+- vimrc
