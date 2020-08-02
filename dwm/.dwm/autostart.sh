@@ -1,8 +1,8 @@
 #!/bin/sh
 
-~/owncloud/Linux/scripts/battcheck start &
+#~/owncloud/Linux/scripts/battcheck start &
 dwmblocks &
-nitrogen --restore &
+xwallpaper --zoom ~/owncloud/Pictures/Wallpaper/wallpaper.png &
 dunst &
 picom &
 killall owncloud; sleep 5; owncloud &
