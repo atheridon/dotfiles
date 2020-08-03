@@ -4,4 +4,8 @@ dwmblocks &
 xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/wallpaper.png &
 dunst &
 picom &
-killall owncloud; sleep 5; owncloud &
+if [ `pidof owncloud ` ]; then
+	killall owncloud
+	sleep 5
+fi
+owncloud &
