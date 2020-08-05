@@ -9,3 +9,5 @@ if [ `pidof owncloud ` ]; then
 	sleep 5
 fi
 owncloud &
+xss-lock ~/owncloud/Linux/scripts/lock &
+xautolock -time 10 -locker ~/owncloud/Linux/scripts/sleeplock &
