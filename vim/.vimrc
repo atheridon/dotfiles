@@ -8,3 +8,5 @@ set incsearch
 set hlsearch
 
 let g:livepreview_previewer = 'zathura'
+
+set clipboard=unnamed
