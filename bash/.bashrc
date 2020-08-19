@@ -12,5 +12,3 @@ export SUDO_EDITOR=/usr/bin/vim
 alias pacman="sudo pacman"
 alias todow="vi ~/.todo.txt"
 alias todor="cat ~/.todo.txt;"
-
-source ~/.local/share/icons-in-terminal/icons_bash.sh
