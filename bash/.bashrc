@@ -9,5 +9,4 @@ export EDITOR=/usr/bin/vim
 export SUDO_EDITOR=/usr/bin/vim
 
 # personal aliases
-alias sudo='sudo '
 alias pacman="sudo pacman"
