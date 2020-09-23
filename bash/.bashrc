@@ -8,5 +8,9 @@ export TERM=xterm
 export EDITOR=/usr/bin/vim
 export SUDO_EDITOR=/usr/bin/vim
 
+# GPG
+GPG_TTY="tty"
+export GPG_TTY
+
 # personal aliases
 alias pacman="sudo pacman"
