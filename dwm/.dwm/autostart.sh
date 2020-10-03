@@ -9,8 +9,9 @@ dunst &
 picom &
 blueman-applet &
 nm-applet &
-sleep 1
+sleep 5
 if [ `pidof owncloud ` ]; then
 	killall owncloud
 fi
 owncloud &
+udiskie -s &
