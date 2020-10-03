@@ -1,15 +1,16 @@
 #!/bin/sh
 
+~/owncloud/Linux/scripts/battcheck start &
+wmname LG3D
+prime-offload &
 dwmblocks &
 xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
 dunst &
 picom &
-~/owncloud/Linux/scripts/battcheck start &
-if [ `pidof owncloud ` ]; then
-	killall owncloud
-	sleep 5
-fi
-owncloud &
 blueman-applet &
 nm-applet &
-prime-offload &
+sleep 1
+if [ `pidof owncloud ` ]; then
+	killall owncloud
+fi
+owncloud &
