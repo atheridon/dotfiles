@@ -12,3 +12,4 @@ fi
 owncloud &
 blueman-applet &
 nm-applet &
+prime-offload &
