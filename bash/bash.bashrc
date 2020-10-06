@@ -19,7 +19,7 @@ esac
 # custom aliases
 alias ls="ls --color=auto --group-directories-first"
 alias l="ls -a --color=auto"
-alias ll="ls -al --color=auto"
+alias ll="ls -alh --color=auto"
 alias dir="ls --color=auto"
 alias clip="xclip -sel c <"
 alias scan="scanimage --format=png --mode Color --progress --device utsushi:esci:networkscan://10.0.0.251:1865 --resolution 100 --output-file"

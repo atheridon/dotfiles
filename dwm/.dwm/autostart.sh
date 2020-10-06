@@ -4,14 +4,13 @@
 wmname LG3D
 prime-offload &
 dwmblocks &
-xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
+xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/rickandmorty.png &
 dunst &
 picom &
 blueman-applet &
 nm-applet &
-sleep 5
 if [ `pidof owncloud ` ]; then
 	killall owncloud
 fi
+sleep 5
 owncloud &
-udiskie -s &
