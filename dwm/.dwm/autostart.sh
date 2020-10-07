@@ -8,7 +8,6 @@ xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
 dunst &
 picom &
 nm-applet &
-blueman-applet &
 redshift-gtk &
 if [ `pidof owncloud ` ]; then
 	killall owncloud
