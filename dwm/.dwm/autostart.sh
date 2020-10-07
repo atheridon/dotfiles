@@ -2,14 +2,15 @@
 
 ~/owncloud/Linux/scripts/battcheck start &
 wmname LG3D
-prime-offload &
 dwmblocks &
+libinput-gestures-setup start &
 xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
-redshift &
 dunst &
 picom &
-blueman-applet &
+redshift-gtk &
+sleep 1
 nm-applet &
+blueman-applet &
 if [ `pidof owncloud ` ]; then
 	killall owncloud
 fi
