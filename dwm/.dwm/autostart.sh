@@ -5,7 +5,7 @@ wmname LG3D
 prime-offload &
 dwmblocks &
 xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
-redshift -c ~/.config/redshift/redshift.conf &
+redshift &
 dunst &
 picom &
 blueman-applet &
