@@ -8,9 +8,11 @@ export TERM=xterm
 export EDITOR=/usr/bin/vim
 export SUDO_EDITOR=/usr/bin/vim
 
+# set WM to non-reparenting for java applications
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # GPG
-GPG_TTY="tty"
-export GPG_TTY
+export GPG_TTY="tty"
 
 # personal aliases
 alias pacman="sudo pacman"

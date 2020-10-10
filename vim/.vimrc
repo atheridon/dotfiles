@@ -1,5 +1,6 @@
 set shell=/bin/bash
 syntax enable
+set title
 set number
 set showcmd
 filetype indent on
