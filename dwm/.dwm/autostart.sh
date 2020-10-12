@@ -7,8 +7,8 @@ libinput-gestures-setup start &
 xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
 dunst &
 picom &
+redshift-gtk & 
 nm-applet &
-redshift-gtk &
 if [ `pidof owncloud ` ]; then
 	killall owncloud
 fi
