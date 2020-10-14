@@ -1,9 +1,6 @@
 # if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# execute tmux when starting terminal
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
-
 # set terminal 
 export TERM=xterm
 
