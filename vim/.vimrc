@@ -3,6 +3,8 @@ syntax enable
 set title
 set number
 set showcmd
+set showmatch
+set ignorecase
 filetype indent on
 set wildmenu
 set incsearch
