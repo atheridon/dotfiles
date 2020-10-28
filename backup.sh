@@ -5,14 +5,15 @@ stow vim/ -t ~/
 stow config/ -t ~/.config/
 stow dwm/ -t ~/
 
-# copy global bashrc to /etc
-sudo cp bash/bash.bashrc /etc/
+# make symbolic link to /etc/bash.bashrc 
+sudo ln -sf ~/owncloud/Linux/dotfiles/bash/bash.bashrc /etc/bash.bashrc
 
 # copy scripts into /usr/local/bin
-sudo ln -s ~/owncloud/Linux/scripts/battcheck /usr/local/bin/battcheck
-sudo ln -s ~/owncloud/Linux/scripts/geoip /usr/local/bin/geoip
-sudo ln -s ~/owncloud/Linux/scripts/lock /usr/local/bin/lock
-sudo ln -s ~/owncloud/Linux/scripts/sleeplock /usr/local/bin/sleeplock
-sudo ln -s ~/owncloud/Linux/scripts/myip /usr/local/bin/myip
-sudo ln -s ~/owncloud/Linux/scripts/record /usr/local/bin/record
-sudo ln -s ~/owncloud/Linux/scripts/xdisplay /usr/local/bin/xdisplay
+sudo ln -sf ~/owncloud/Linux/scripts/battcheck /usr/local/bin/battcheck
+sudo ln -sf ~/owncloud/Linux/scripts/geoip /usr/local/bin/geoip
+sudo ln -sf ~/owncloud/Linux/scripts/lock /usr/local/bin/lock
+sudo ln -sf ~/owncloud/Linux/scripts/sleeplock /usr/local/bin/sleeplock
+sudo ln -sf ~/owncloud/Linux/scripts/myip /usr/local/bin/myip
+sudo ln -sf ~/owncloud/Linux/scripts/record /usr/local/bin/record
+sudo ln -sf ~/owncloud/Linux/scripts/xdisplay /usr/local/bin/xdisplay
+sudo ln -sf ~/owncloud/Linux/scripts/nctf /usr/local/bin/nctf
