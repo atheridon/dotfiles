@@ -3,6 +3,7 @@
 stow bash/ --ignore=bash.bashrc -t ~/
 stow vim/ -t ~/
 stow config/ -t ~/.config/
+stow tmux/ -t ~/
 stow dwm/ -t ~/
 
 # make symbolic link to /etc/bash.bashrc 
