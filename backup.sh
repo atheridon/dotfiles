@@ -6,8 +6,8 @@ stow config/ -t ~/.config/
 stow tmux/ -t ~/
 stow dwm/ -t ~/
 
-# make symbolic link to /etc/bash.bashrc 
-sudo ln -sf ~/owncloud/Linux/dotfiles/bash/bash.bashrc /etc/bash.bashrc
+# create copy /etc/bash.bashrc
+sudo cp bash/bash.bashrc /etc/bash.bashrc
 
 # copy scripts into /usr/local/bin
 sudo ln -sf ~/owncloud/Linux/scripts/battcheck /usr/local/bin/battcheck
