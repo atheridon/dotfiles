@@ -18,9 +18,9 @@ esac
 
 # custom aliases
 alias ls="ls --color=auto --group-directories-first"
-alias l="ls -a --color=auto"
-alias ll="ls -alh --color=auto"
-alias dir="ls --color=auto"
+alias l="ls -a --color=auto --group-directories-first"
+alias ll="ls -alh --color=auto --group-directories-first"
+alias grep="grep --color=auto"
 alias clipfile="xclip -sel c <"
 alias clipcmd="xclip -selection clipboard"
 alias scan="scanimage --format=png --mode Color --progress --device epkowa:net:10.0.0.251 --resolution 100 --output-file"
