@@ -17,9 +17,9 @@ esac
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 # custom aliases
-alias ls="ls --color=auto --group-directories-first"
-alias l="ls -a --color=auto --group-directories-first"
-alias ll="ls -alh --color=auto --group-directories-first"
+alias ls="ls -v --color=auto --group-directories-first"
+alias l="ls -av --color=auto --group-directories-first"
+alias ll="ls -alhv --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias egrep="grep --color=auto"
 alias clipfile="xclip -sel c <"
