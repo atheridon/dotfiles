@@ -2,8 +2,12 @@
 
 - bashrc
 - bash.bashrc
-- dunst
 - dwm/autostart.sh
+- libinput-gestures.conf
+- redshift.conf
+- dunst
+- picom
 - rofi
 - sxiv
+- tmux
 - vimrc
