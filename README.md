@@ -11,3 +11,4 @@
 - sxiv
 - tmux
 - vimrc
+- Xressources
