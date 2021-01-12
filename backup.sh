@@ -5,7 +5,7 @@ stow vim/ -t ~/
 stow config/ -t ~/.config/
 stow tmux/ -t ~/
 stow dwm/ -t ~/
-stow Xressources/ -t ~/
+stow Xresources/ -t ~/
 
 # create copy /etc/bash.bashrc
 sudo cp bash/bash.bashrc /etc/bash.bashrc
