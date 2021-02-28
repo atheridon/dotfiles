@@ -4,7 +4,7 @@
 #wmname LG3D
 dwmblocks &
 libinput-gestures-setup start &
-xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/lichking.jpg &
+xwallpaper --stretch ~/owncloud/Pictures/Wallpaper/astro.png &
 dunst &
 picom &
 redshift-gtk & 
