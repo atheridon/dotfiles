@@ -1,4 +1,4 @@
-# Linux dotfiles
+# Linux Dotfiles
 
 - bashrc
 - bash.bashrc
