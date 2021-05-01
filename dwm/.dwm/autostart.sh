@@ -4,7 +4,7 @@
 #wmname LG3D
 dwmblocks &
 libinput-gestures-setup start &
-xwallpaper --zoom ~/nextcloud/Pictures/Wallpaper/wallhaven-288wox.jpg &
+xwallpaper --zoom ~/nextcloud/Pictures/Wallpaper/b8e3209b7ee3feb9d1613a08209c4961.jpg &
 dunst &
 picom &
 redshift-gtk & 
