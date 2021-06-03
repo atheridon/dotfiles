@@ -1,11 +1,11 @@
 #!/bin/sh
 # stow to backup dotfiles
-stow -R bash/ --ignore=bash.bashrc -t ~/
-stow -R vim/ -t ~/
-stow -R config/ -t ~/.config/
-stow -R tmux/ -t ~/
-stow -R dwm/ -t ~/
-stow -R Xresources/ -t ~/
+stow bash/ --ignore=bash.bashrc -t ~/
+stow vim/ -t ~/
+stow config/ -t ~/.config/
+stow tmux/ -t ~/
+stow dwm/ -t ~/
+stow Xresources/ -t ~/
 
 # create copy /etc/bash.bashrc
 sudo cp bash/bash.bashrc /etc/bash.bashrc
