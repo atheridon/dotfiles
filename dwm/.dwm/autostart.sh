@@ -1,6 +1,7 @@
 #!/bin/sh
 
 ~/cloud/Linux/scripts/battcheck start &
+prime-offload &
 #wmname LG3D
 dwmblocks &
 libinput-gestures-setup start &
