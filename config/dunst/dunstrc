@@ -21,7 +21,7 @@ font = "Liberation Sans 10"
 line_height = 0
 markup = full
 format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
-alignment = center
+alignment = left
 
 idle_threshold = 120
 show_age_threshold = 60
@@ -52,12 +52,12 @@ close_all = ctrl+shift+space
 history = ctrl+period
 
 [urgency_low]
-timeout = 5
+timeout = 6
 background = "#181818"
 foreground = "#f9f9f9"
 
 [urgency_normal]
-timeout = 5
+timeout = 6
 background = "#181818"
 foreground = "#f9f9f9"
 
