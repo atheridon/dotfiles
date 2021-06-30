@@ -11,5 +11,6 @@ set incsearch
 set hlsearch
 set tabstop=4
 set shiftwidth=4
+set clipboard=unnamedplus
 
 let g:livepreview_previewer = 'zathura'
