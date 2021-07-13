@@ -1,14 +1,14 @@
 #!/bin/sh
 # stow to backup dotfiles
-stow bash/ --ignore=bash.bashrc -t ~/
+stow zsh/ --ignore=damus.zsh-theme -t ~/
 stow vim/ -t ~/
 stow config/ -t ~/.config/
 stow tmux/ -t ~/
 stow dwm/ -t ~/
 stow Xresources/ -t ~/
 
-# create copy /etc/bash.bashrc
-sudo cp bash/bash.bashrc /etc/bash.bashrc
+# copy zsh theme to /usr/share/oh-my-zsh/custom/themes
+sudo ln -s ~/cloud/Linux/dotfiles/zsh/damus.zsh-theme /usr/share/oh-my-zsh/custom/themes/damus.zsh-theme
 
 # copy scripts into /usr/local/bin
 sudo ln -sf ~/cloud/Linux/scripts/battcheck /usr/local/bin/battcheck

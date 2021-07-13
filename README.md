@@ -1,7 +1,6 @@
 # Linux Dotfiles
 
-- bashrc
-- bash.bashrc
+- zshrc
 - dwm/autostart.sh
 - libinput-gestures.conf
 - redshift.conf
