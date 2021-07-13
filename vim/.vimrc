@@ -1,4 +1,4 @@
-set shell=/bin/bash
+set shell=/bin/zsh
 syntax enable
 set title
 set number
