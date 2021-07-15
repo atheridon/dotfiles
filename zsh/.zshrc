@@ -104,10 +104,9 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export TERM="xterm"
-export EDITOR=/usr/bin/vim
-export SUDO_EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
+export SUDO_EDITOR=/usr/bin/nvim
 
-alias vi="vim"
 alias py="python"
 alias nnn="nnn -e"
 alias pacman="sudo pacman"
